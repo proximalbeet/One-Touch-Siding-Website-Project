@@ -87,8 +87,13 @@ body {
 }
 
 .Contacting {
-  margin-left: 40px; /* tweak this value as needed */
-  max-width: 600px;  /* optional: limit width to avoid super-wide text */
+  display: grid;
+  column-fill: auto;
+  padding: 10px;
+  margin-right: 30%;
+  gap: 40px;
+  background-color: #333;
+  font-size:xx-large;
 }
 
 .drawing {
