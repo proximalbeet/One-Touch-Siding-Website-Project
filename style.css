@@ -16,6 +16,11 @@
         font-style: normal;
     }
 
+
+/* ================================
+   Header Section
+  ================================ */
+
 header {
   position: sticky;
   top: 0;
@@ -32,11 +37,10 @@ header {
 }
 
 .logo {
-  height: 5em;  /* or 4em depending on how large you want it */
+  height: 5em;  
   width: auto;
   flex-shrink: 0;
 }
-
 
 /* Flex container for text + button */
 .txt-btn-grp {
@@ -72,9 +76,14 @@ header {
   flex-shrink: 0;
 }
 
+/* ================================
+   Global Properties Section
+   ================================ */
+
 button:hover {
   background: #0056b3;
 }
+
 
 body {
   font-family: Arial, sans-serif;
@@ -83,37 +92,175 @@ body {
   min-height: 200vh;
 }
 
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+/* ================================
+   Block Section
+   ================================ */
+
 .block {
-  margin: 10px;
-  padding: 100px 50px;
+  margin: 20px;
+  aspect-ratio: 4 / 1; /* maintains proportional height */
+  padding: 2vw;
   background-color: #3e3f3f;
   border-radius:5px;
-  min-height: 400px;
   font-family: 'Bebas Neue', sans-serif;
+  border-radius: 15px;
+  border-style: groove;
+  border-color: #0056b3;
+  border-width: 2px;
+  font-size: clamp(1em, 2vw, 2.6em);
 }
+
+/* --------- Block 2 --------- */
+
+.block2 {
+  display: flex;
+  flex-direction: row;       
+  flex-wrap: nowrap;          
+  justify-content: space-between;
+  align-items: center;  
+  padding: 4vh
+}
+
+.about-us {
+  max-width: 85ch;
+  width: 90%;
+  margin: 0 auto;
+  text-indent: 1.5em;
+}
+
+.posing {
+  flex: 1 1 35%;
+  max-height: 75vh;
+  max-width: 75vh;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: #333;
+   border-radius: 25px;
+  border-style: groove;
+  border-color: #0056b3;
+  border-width: 5px;
+}
+
+/* --------- Block 5 --------- */
+
+.block5 {
+  padding: 4vh;
+  gap: 100px;
+}
+
+.testimonial {
+  padding-top: 2em;
+  gap: 25px;
+  column-count: 3;
+}
+
+.testimonial-item {
+   border-left: 5px solid #ffffff;
+  padding-left: 1em;
+  min-height: 10vw; /* Adjust to make the line taller */
+  break-inside: avoid;
+  margin-bottom: 2em;
+}
+
+/* --------- Block 6 --------- */
+
+.block6 {
+  padding: 2vh;
+}
+
+.about-us {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.5em, 2vw, 1.6em);
+  padding: 6vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.other-services {
+  display: flex;
+  flex-direction: row;       
+  flex-wrap: nowrap;          
+  justify-content: space-between;
+  align-items: center;    
+  padding: 0 5em;
+  gap: 1em;
+}
+
+
+.logo2, .logo3 {
+  box-sizing: border-box;
+  overflow-y: auto;
+  flex-shrink: 1;
+  border-radius: 25px;
+  border-style: groove;
+  border-color: #0056b3;
+  border-width: 5px;
+
+}
+
+.logo2 {
+  flex: 1 1 50%;
+  max-width: 100vh;
+  max-height: 60vh;
+}
+
+.logo3 {
+  flex: 1 1 50%;
+  max-width: 80vh;
+  max-height: 100vh;
+}
+
+/* --------- Block 7 --------- */
 
 .block7 {
   display: flex;
+  flex-direction: row;       
+  flex-wrap: nowrap;          
   justify-content: space-between;
-  align-items:center;
-  padding: 100px;
+  align-items: center;    
+  gap: 40px;
 }
 
 .Contacting {
-  display: grid;
-  column-fill: auto;
-  padding: 10px;
-  margin-right: 25%;
-  gap: 50px;
-  font-size:xxx-large;
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.5em, 3vw, 4.6em);
+  padding: 6vw;
+  border-radius: 25px;
+  border-style: groove;
+  border-color: #0056b3;
+  border-width: 5px;
+  background-color: #333;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .drawing {
-
-  height: 70em;
-  width: auto;
-  flex-shrink: 0;
+  flex: 1 1 65%;
+  max-height: 75vh;
+  max-width: 75vh;
+  overflow-y: auto;
+ 
+  border-radius: 5px;
+  background-color: #333;
 }
+
+/* ================================
+   Media Section
+   ================================ */
+
 @media (max-width: 600px) {
   .txt-btn-grp {
     flex-direction: column; /* now stacks vertically */
