@@ -115,6 +115,12 @@ h1 {
   font-size: clamp(1em, 2vw, 2.6em);
 }
 
+/* --------- Block 1 --------- */
+
+.block1 {
+  background-image: url('Images/background.png');
+}
+
 /* --------- Block 2 --------- */
 
 .block2 {
@@ -145,6 +151,10 @@ h1 {
   border-color: #0056b3;
   border-width: 5px;
 }
+
+/* --------- Block 3 --------- */
+/* --------- Block 4 --------- */
+
 
 /* --------- Block 5 --------- */
 
@@ -194,7 +204,6 @@ h1 {
   padding: 0 5em;
   gap: 1em;
 }
-
 
 .logo2, .logo3 {
   box-sizing: border-box;
